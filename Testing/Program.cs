@@ -1,8 +1,17 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Threading;
 
 namespace Testing
 {
+    public static class Myclass
+    {
+        public static void Message(string msg)
+        {
+            Console.WriteLine(msg);
+        }
+    }       
+
     internal class Program
     {
         public static void ThreadMethod()
@@ -43,10 +52,6 @@ namespace Testing
             //function1();
             //Console.ReadKey();
 
-            //int x;
-            //int y = 5 * (x = 2);
-            //Console.WriteLine(y);
-
             //int[][] matrix = new int[3][];
             //for (int i = 0; i < matrix.Length; i++)
             //{
@@ -62,15 +67,6 @@ namespace Testing
             //    }
             //    Console.WriteLine();
             //}
-
-
-            //int z;
-            //int x = int.MaxValue;
-            //int y = unchecked(x + 1);
-            //unchecked { z = x + 1; }
-            //Console.WriteLine(z);
-            //Console.WriteLine(y);
-            //Console.WriteLine(unchecked(int.MaxValue + 1));
 
             //int n = 0;
             //var up = Task.Run(() =>
